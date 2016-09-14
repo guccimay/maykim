@@ -1,0 +1,37 @@
+body
+{font-family: 'Raleway500', sans-serif;
+color: black;
+background-color: white;
+}
+
+.circle {
+    border-radius:50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+#name{
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 20px;
+
+}
+
+#shape1 {
+	width: 200px;
+	height: 200px;
+  margin-left: 60%;
+  margin-top: 10%;
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, pink 0%, green 20%, red 10%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, pink, green );
+	background-image: radial-gradient(45px 45px 45deg, circle cover, pink 0%, green 80%, red 95%);
+	animation-name: spin;
+	animation-duration: 3s; /* 3 seconds */
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}

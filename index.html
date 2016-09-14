@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>may kim</title>
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript">
+  		window.addEventListener("load", function() {
+  			var c, a = document.getElementById("drawingspace");
+  			a.width = window.innerWidth;
+  			a.height = window.innerHeight;
+  			var e = !1;
+  			c = a.getContext("2d");
+  			a.addEventListener("mousemove", function(b) {
+  				var a, d;
+  				if (b.layerX || 0 == b.layerX) a = b.layerX, d = b.layerY;
+  				else if (b.offsetX || 0 == b.offsetX) a = b.offsetX, d = b.offsetY;
+  				c.lineCap = "butt";
+  				c.lineWidth = 1;
+  				c.strokeStyle = "black";
+  				e ? (c.lineTo(a, d), c.stroke()) : (c.beginPath(), c.moveTo(a, d), e = !0)
+  			}, !1)
+  			a.addEventListener("click", function(b) {
+  				c.clearRect(0,0,a.width, a.height);
+  				c.beginPath();
+  			}, !1)
+  		}, !1);
+  		var stateCount = 0;
+  		(function(window,undefined){
+  	    	});
+  </script>
+
+</head>
+
+<body>
+
+<canvas id="drawingspace" width="100%" height="400%" overflow-y="scroll"
+style="position:fixed; z-index:0;"> </canvas>
+
+<div id="name"> May Kim</br>
+Graphic Designer</br>
+Based in New York</br>
+hellomaykim@gmail.com</br>
+</div>
+
+<div id="shape1" class="circle"></div>
+
+</div>
+</body>
+</html>
