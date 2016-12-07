@@ -5,9 +5,10 @@
 
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>may kim</title>
+<title>MAY KIM</title>
 
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
 <link rel="stylesheet" href="main.css">
 <script src="js/jquery-1.11.3.js"></script>
@@ -23,7 +24,7 @@
   				var a, d;
   				if (b.layerX || 0 == b.layerX) a = b.layerX, d = b.layerY;
   				else if (b.offsetX || 0 == b.offsetX) a = b.offsetX, d = b.offsetY;
-  				c.lineCap = "butt";
+  				c.lineCap = "coke";
   				c.lineWidth = 1;
   				c.strokeStyle = "black";
   				e ? (c.lineTo(a, d), c.stroke()) : (c.beginPath(), c.moveTo(a, d), e = !0)
@@ -37,34 +38,6 @@
   		(function(window,undefined){
   	    	});
   </script>
-  <script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    var meridiem = "AM";
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s + " " + meridiem + " " + 'in NYC';
-    var t = setTimeout(startTime, 500);
-}
-
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};
-    return i;
-
-    if (hours > 12) {
-    hours = hours - 12;
-    meridiem = "PM";
-}
-
-if (hours === 0) {
-    hours = 12;
-}
-}
-</script>
 
 </head>
 
@@ -75,13 +48,19 @@ style="position:fixed; z-index:0;"> </canvas>
 
 <div id="name"> May Kim</br>
 Graphic Designer</br>
+Based in New York City </br>
 hellomaykim@gmail.com</br></br>
-<div id="txt"> </div>
-
-
 </div>
 
-<div id="shape1" class="circle"></div>
+
+<button id="personal" style="position:fixed; z-index:99";>
+<a href="works.html">personal projects</a></button>
+
+<button id="instagram" style="position:fixed; z-index:99";>
+<a href="https://www.instagram.com/guccimay">instagram</a></button>
+
+
+
 
 </div>
 </body>
