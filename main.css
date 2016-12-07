@@ -1,16 +1,20 @@
 body
-{font-family: 'Raleway500', sans-serif;
+{font-family: 'Raleway500', sans-serif !important;
 color: black;
 background-color: white;
 }
 
-#txt
-{color: black;}
+a
+{
+text-decoration: none !important;
+font-family: 'Raleway500', sans-serif;
+color: black;
+}
 
-.circle {
-    border-radius:50%;
-    display: inline-block;
-    margin-right: 20px;
+section{
+  margin-left: 80px;
+  margin-top: 10%;
+  font-size: 14px;
 }
 
 @keyframes spin {
@@ -18,21 +22,82 @@ background-color: white;
 	to { transform: rotate(360deg); }
 }
 
-#name{
-  margin-left: 10%;
-  margin-top: 5%;
-  font-size: 20px;
+.circle {
+    border-radius:50%;
+    display: inline-block;
+    margin-right: 20px;
+}
 
+
+#personal
+{font-family: 'Raleway500', sans-serif;
+font-size: 20px;
+color: black;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+background-color: white;
+margin-left: 40%;
+margin-top: 5%;
+padding: 10px 20px 10px 20px;
+cursor:pointer;
+}
+
+#personal:hover{
+background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, white 0%, white 20%, white 10%);
+background-image: -webkit-radial-gradient(45px 45px, circle cover,white,white );
+background-image: radial-gradient(45px 45px 45deg, circle cover, white 0%,white80%, white 95%);
+animation-name: spin;
+animation-duration: 3s; /* 3 seconds */
+animation-iteration-count: infinite;
+animation-timing-function: linear;,1s,1s,1s,1s,1s;
+display:inline-block;}
+
+#instagram
+{font-family: 'Raleway500', sans-serif;
+font-size: 20px;
+color: black;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+background-color: white;
+margin-left: 5%;
+margin-top: 25%;
+padding: 10px 20px 10px 20px;
+cursor:pointer;
+}
+
+#instagram:hover{
+background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, white 0%, white 20%, white 10%);
+background-image: -webkit-radial-gradient(45px 45px, circle cover, white, white );
+background-image: radial-gradient(45px 45px 45deg, circle cover, white 0%, white 80%, white 95%);
+animation-name: spin;
+animation-duration: 3s; /* 3 seconds */
+animation-iteration-count: infinite;
+animation-timing-function: linear;,1s,1s,1s,1s,1s;
+display:inline-block;}
+
+
+#txt
+{color: black;}
+
+#libros{
+  margin-bottom:10px;
+}
+#name{
+  margin-left: 8%;
+  margin-top: 6%;
+  font-size: 20px;
 }
 
 #shape1 {
-	width: 200px;
-	height: 200px;
-  margin-left: 60%;
-  margin-top: 10%;
-	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, pink 0%, green 20%, red 10%);
-	background-image: -webkit-radial-gradient(45px 45px, circle cover, pink, green );
-	background-image: radial-gradient(45px 45px 45deg, circle cover, pink 0%, green 80%, red 95%);
+	width: 70px;
+	height: 100px;
+  margin-left: 80%;
+  margin-top: 2%;
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, pink 0%, black 20%, red 10%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, pink, black );
+	background-image: radial-gradient(45px 45px 45deg, circle cover, pink 0%, black 80%, red 95%);
 	animation-name: spin;
 	animation-duration: 3s; /* 3 seconds */
 	animation-iteration-count: infinite;
