@@ -15,6 +15,7 @@ section{
   margin-left: 80px;
   margin-top: 10%;
   font-size: 14px;
+  width: 500px;
 }
 
 @keyframes spin {
@@ -102,4 +103,25 @@ display:inline-block;}
 	animation-duration: 3s; /* 3 seconds */
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+  display: inline-block;
+  padding: 2em;
+}
+
+#shape1:active {
+	width: 70px;
+	height: 100px;
+  margin-left: 80%;
+  margin-top: 2%;
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, pink 0%, black 20%, red 10%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, pink, black );
+	background-image: radial-gradient(45px 45px 45deg, circle cover, pink 0%, black 80%, red 95%);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+	animation-name: spin;
+	animation-duration: 3s; /* 3 seconds */
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  display: inline-block;
+  padding: 2em;
 }
