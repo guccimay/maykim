@@ -21,6 +21,7 @@
   			a.height = window.innerHeight;
   			var e = !1;
   			c = a.getContext("2d");
+    
   			a.addEventListener("mousemove", function(b) {
   				var a, d;
   				if (b.layerX || 0 == b.layerX) a = b.layerX, d = b.layerY;
@@ -30,6 +31,7 @@
   				c.strokeStyle = "black";
   				e ? (c.lineTo(a, d), c.stroke()) : (c.beginPath(), c.moveTo(a, d), e = !0)
   			}, !1)
+    
   			a.addEventListener("click", function(b) {
   				c.clearRect(0,0,a.width, a.height);
   				c.beginPath();
@@ -40,7 +42,6 @@
   	    	});
     }
  
-  
 </script>  
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
