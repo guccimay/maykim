@@ -38,6 +38,29 @@
   		var stateCount = 0;
   		(function(window,undefined){
   	    	});
+  
+       var width = $(window).width();
+       if (width < 768) {
+       mobileView();
+  a.addEventListener("touchmove", function(b) {
+  				var a, d;
+  				if (b.layerX || 0 == b.layerX) a = b.layerX, d = b.layerY;
+  				else if (b.offsetX || 0 == b.offsetX) a = b.offsetX, d = b.offsetY;
+  				c.lineCap = "full";
+  				c.lineWidth = 1;
+  				c.strokeStyle = "black";
+  				e ? (c.lineTo(a, d), c.stroke()) : (c.beginPath(), c.moveTo(a, d), e = !0)
+  			}, !1)
+  			a.addEventListener("touch", function(b) {
+  				c.clearRect(0,0,a.width, a.height);
+  				c.beginPath();
+  			}, !1)
+  		}, !1);
+  		var stateCount = 0;
+  		(function(window,undefined){
+  	    	});
+    }
+  
 </script>  
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
