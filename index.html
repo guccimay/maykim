@@ -38,28 +38,41 @@
   		var stateCount = 0;
   		(function(window,undefined){
   	    	});
-  
-       var width = $(window).width();
-       if (width < 768) {
-       mobileView();
-  a.addEventListener("touchmove", function(b) {
-  				var a, d;
-  				if (b.layerX || 0 == b.layerX) a = b.layerX, d = b.layerY;
-  				else if (b.offsetX || 0 == b.offsetX) a = b.offsetX, d = b.offsetY;
-  				c.lineCap = "full";
-  				c.lineWidth = 1;
-  				c.strokeStyle = "black";
-  				e ? (c.lineTo(a, d), c.stroke()) : (c.beginPath(), c.moveTo(a, d), e = !0)
-  			}, !1)
-  			a.addEventListener("touch", function(b) {
-  				c.clearRect(0,0,a.width, a.height);
-  				c.beginPath();
-  			}, !1)
-  		}, !1);
-  		var stateCount = 0;
-  		(function(window,undefined){
-  	    	});
     }
+    
+     // switching to touch event from mouse event 
+    
+    function touchHandler(event)
+{
+    var touches = event.changedTouches,
+        first = touches[0],
+        type = "";
+    switch(event.type)
+    {
+        case "touchstart": type = "mousedown"; break;
+        case "touchmove":  type = "mousemove"; break;        
+        case "touchend":   type = "mouseup";   break;
+        default:           return;
+    }
+
+  
+    var simulatedEvent = document.createEvent("MouseEvent");
+    simulatedEvent.initMouseEvent(type, true, true, window, 1, 
+                                  first.screenX, first.screenY, 
+                                  first.clientX, first.clientY, false, 
+                                  false, false, false, 0/*left*/, null);
+
+    first.target.dispatchEvent(simulatedEvent);
+    event.preventDefault();
+}
+
+function init() 
+{
+    document.addEventListener("touchstart", touchHandler, true);
+    document.addEventListener("touchmove", touchHandler, true);
+    document.addEventListener("touchend", touchHandler, true);
+    document.addEventListener("touchcancel", touchHandler, true);    
+}
   
 </script>  
 <script>
