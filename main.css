@@ -1,5 +1,5 @@
 body
-{font-family: 'Raleway500', sans-serif !important;
+{font-family: 'Roboto Condensed', sans-serif !important;
 color: black;
 background-color: white;
 }
@@ -7,7 +7,7 @@ background-color: white;
 a
 {
 text-decoration: none !important;
-font-family: 'Raleway500', sans-serif;
+font-family: 'Roboto Condensed', sans-serif !important;
 color: black;
 }
 
@@ -31,7 +31,7 @@ section{
 
 
 #personal
-{font-family: 'Raleway500', sans-serif;
+{font-family: 'Roboto Condensed', sans-serif;
 font-size: 20px;
 color: black;
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
@@ -55,7 +55,7 @@ animation-timing-function: linear;,1s,1s,1s,1s,1s;
 display:inline-block;}
 
 #instagram
-{font-family: 'Raleway500', sans-serif;
+{font-family: 'Roboto Condensed', sans-serif;
 font-size: 20px;
 color: black;
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
