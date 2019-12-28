@@ -1,7 +1,27 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<style>HTML,BODY</style>
+<style>HTML,BODY
+  
+  div {
+  position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 300px;
+    height: 120px;
+    font-size: 20px;;
+    color: black;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+  </style>
 
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,7 +34,7 @@
 <body>
 
 <div>
-<img src="ex.png" width="500px" margin-left="5%" margin-top="5%">
+<img src="ex.png" width="300px">
 </div>
 
 </body>
