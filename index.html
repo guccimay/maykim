@@ -41,7 +41,7 @@
   				if (b.layerX || 0 == b.layerX) a = b.layerX, d = b.layerY;
   				else if (b.offsetX || 0 == b.offsetX) a = b.offsetX, d = b.offsetY;
   				c.lineCap = "full";
-  				c.lineWidth = 2;
+  				c.lineWidth =3;
   				c.strokeStyle = "black";
   				e ? (c.lineTo(a, d), c.stroke()) : (c.beginPath(), c.moveTo(a, d), e = !0)
   			}, !1)
@@ -71,8 +71,8 @@
 <img src="ex.png" width="500px">
 </div>
   
-<canvas id="drawingspace" width="100%" height="400%" overflow-y="scroll"
-style="position:fixed; z-index:-1;"> </canvas>
+<canvas id="drawingspace" width="100%" height="400%" overflow-y="hidden"
+style="position:fixed; z-index:-999;"> </canvas>
 
 </body>
 </html>
